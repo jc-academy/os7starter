@@ -1,0 +1,39 @@
+$nav-color: #333;
+$active-color: #e5591e;
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: $nav-color;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 50px;
+
+    ul{
+        list-style-type: none;
+        display: contents;
+        
+
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            height: 100%;
+            color: white;
+        }
+    }
+
+    #active{
+        background-color: $active-color;
+        color: black;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+}
